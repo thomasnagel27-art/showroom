@@ -1,0 +1,27 @@
+Videos fuer die Leinwand am Gipfel
+==================================
+
+Einfach MP4-Dateien in diesen Ordner ziehen - mehr ist nicht noetig, es muss nichts eingestellt werden.
+Die Leinwand spielt alle Videos nacheinander ab und beginnt danach wieder von vorn.
+Ist der Ordner leer, zeigt die Leinwand "Coming soon" mit dem NailProp-Logo. Sobald ein Video im Ordner liegt,
+verschwindet "Coming soon" von selbst (zwischen den Videos ist dann nur das Logo zu sehen).
+
+So sollten die Videos gespeichert sein (Quest 2):
+- Container:    MP4 (Dateiendung .mp4)
+- Video-Codec:  H.264 (AVC), Profil "High" oder "Main" - KEIN H.265/HEVC, kein AV1, kein ProRes
+- Aufloesung:   1280 x 720 (720p), Querformat 16:9. Hoechstens 1920 x 1080.
+- Bildrate:     30 Bilder/s (25 geht auch), konstante Bildrate
+- Datenrate:    ca. 3-5 Mbit/s bei 720p (bei 1080p ca. 8 Mbit/s)
+- Ton:          AAC, Stereo, 48 kHz, ca. 128-160 kbit/s (Videos ohne Ton gehen auch)
+- Laenge:       beliebig; kurze Clips (20-90 s) halten die App klein - jedes Video steckt in voller Groesse im Build.
+
+Dateinamen: ohne Leerzeichen, Umlaute und Sonderzeichen (z. B. 01_klettersteig.mp4, 02_gipfel.mp4).
+Reihenfolge: alphabetisch nach Dateiname - am einfachsten mit 01_, 02_, ... nummerieren.
+
+Wissenswert:
+- Ein Video startet, sobald man oben auf der Plattform steht. Verlaesst man sie, haelt es an (spart Leistung);
+  beim naechsten Besuch laeuft das naechste Video von vorn.
+- Im Editor und im PC-Build wird der Ordner bei jedem Start neu gelesen.
+  Fuer die Quest muss nach dem Hinzufuegen neu gebaut werden (Build) - die Liste traegt sich dabei selbst ein.
+- Ton: kommt raeumlich von der Leinwand (Lautstaerke am Objekt Gipfel/Leinwand, Komponente "Gipfel Kino").
+- Andere Dateien in diesem Ordner (wie diese hier) werden ignoriert.

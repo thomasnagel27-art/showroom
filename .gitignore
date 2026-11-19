@@ -1,0 +1,4 @@
+# Nur der WebGL-Build (docs/) wird versioniert, nicht das Unity-Projekt
+/*
+!/docs/
+!/.gitignore
